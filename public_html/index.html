@@ -1,0 +1,58 @@
+<!-- Jake Kravas -->
+<!-- This file displays two forms to the user, where they can input
+user and item data -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='style.css'>
+  <title>Ostaa</title>
+</head>
+<body>
+
+  <div id='user-area'>
+    <h1 class='header'>Add User</h1>
+    <form id='user-form'>
+      <label for='username'>Username</label>
+      <input type='text' name='username' id='username-input'>
+      <br>
+      <label for='password'>Password</label>
+      <input type='text' name='password' id='password-input'>
+      <br>
+      <button type='submit'>Add user</button>
+    </form>
+  </div>
+  
+  <div id='item-area'>
+    <h1 class='header'>Add Item</h1>
+    <form action='' id='item-form'>
+      <label for=''>Title</label>
+      <input type='text' name='title' id='title-input' required>
+      <br>
+      <label for=''>Desc</label>
+      <input type='text' name='description' id='description-input' required>
+      <br>
+      <label for=''>Image</label>
+      <input type='text' name='image' id='image-input' required>
+      <br>
+      <label for=''>Price</label>
+      <input type='number' name='price' id='price-input' required>
+      <br>
+      <label for='status'>Status</label>
+      <select name='status' id='status-input'>
+        <option value='SALE'>SALE</option>
+        <option value='SOLD'>SOLD</option>
+      </select>
+      <br>
+      <label for=''>Username</label>
+      <input type='text' name='username' id='username-item-input' required>
+      <br>
+      <button type='submit'>Add item</button>
+    </form>
+  </div>
+
+
+  <script src='script.js' defer></script>
+</body>
+</html>
